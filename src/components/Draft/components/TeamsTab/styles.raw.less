@@ -1,0 +1,116 @@
+container {
+  text-align: left;
+  min-height: 100vh;
+  padding-bottom: 50px;
+
+  .teamSelect {
+    select {
+      border-radius: 0;
+      border: none;
+      background: none;
+      font-size: 20px;
+      margin-top: 10px;
+    }
+  }
+
+  .statsSection {
+    display: flex;
+    flex-flow: row wrap;
+
+    .generalStats {
+      min-width: 300px;
+      flex: 1;
+      
+      .statsList {
+        display: flex;
+        flex-flow: row wrap;
+
+        .statItem {
+          min-width: 150px;
+          flex: 1;
+          padding: 15px;
+          margin: 5px;
+          border: solid 2px rgba(200,200,200,.8);
+
+          h4 {
+            color: #666;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+
+    .statComparison {
+      min-width: 300px;
+      flex: 1;
+
+      .statSelection {
+        display: flex;
+        flex-flow: row nowrap;
+
+        h3 {
+          color: #666;
+          flex: 1;
+        }
+
+        select {
+          flex: 0;
+        }
+      }
+
+      .statItem {
+        display: flex;
+        flex-flow: row nowrap;
+        background: rgba(0,0,0,.25);
+        margin: 3px 0;
+        padding: 3px 10px;
+        position: relative;
+
+        h4 {
+          flex: 1;
+          z-index: 1;
+        }
+
+        .statValue {
+          flex: 0;
+          z-index: 1;
+          white-space: nowrap;
+        }
+
+        .statColorLine {
+          background: #f3c8a2;
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          z-index: 0;
+        }
+      }
+    }
+  }
+
+  .activeTeamRoster {
+    padding: 5px 3px;
+    max-width: 100%;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar { 
+      display: none; 
+    }
+
+    .genders {
+      font-size: 14px;
+      margin: 7px 0;
+
+      li {
+        display: inline-block;
+        margin-right: 10px;
+
+        .statsLabel {
+          color: #3379a9;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

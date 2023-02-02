@@ -1,0 +1,54 @@
+@import "../../styles/playerNote";
+
+.playerNoteColors();
+
+container {
+  
+  max-width: 100%;
+  overflow: scroll;
+  font-size: 14px;
+  margin-top: 3px;
+
+  &::-webkit-scrollbar { 
+    display: none; 
+  }
+
+  table {
+    width: 100%;
+
+    thead td {
+      &.playerCol, &.bagCol {
+        color: #999;
+      }
+    }
+
+    td {
+      padding: 2px 3px;
+      white-space: nowrap;
+    }
+
+    img {
+      height: 15px;
+    }
+
+    .attrCol {
+      font-size: 12px;
+      color: #999;
+      max-width: 60px;
+      width: 60px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .playerCol, .bagCol {
+      font-size: 12px;
+      color: #000;
+      max-width: 115px;
+      width: 115px;
+      overflow: hidden;
+      white-space: normal;
+      text-overflow: ellipsis;
+    }
+  }
+}

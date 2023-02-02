@@ -1,0 +1,44 @@
+container {
+  text-align: center;
+  padding: 30px 10px 30px 10px;
+  background: #f3f3f3;
+
+  h2 {
+    font-size: 30px;
+    color: #649aa6;
+
+    &.activeClick:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+
+  .topScoreUrl {
+    color: #888;
+  }
+
+  .navControls {
+    margin-top: 15px;
+
+    .orgEditLink, .orgViewLink {
+      display: inline-block;
+      cursor: pointer;
+      margin: 0 75px 0 10px;
+    }
+
+    .orgViewLink {
+      color: #649aa6;
+    }
+
+    .orgEditLink {
+      color: #666;
+    }
+  }
+
+  @media (min-width: 600px) {
+
+    h2 {
+      font-size: 36px;
+    }
+  }
+}

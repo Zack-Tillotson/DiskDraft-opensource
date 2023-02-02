@@ -1,0 +1,54 @@
+container {
+
+  .organizationsTitle {
+    font-size: 20px;
+    border-bottom: solid 1px #ccc;
+    padding: 10px;
+  }
+
+  .organizationsLink {
+    text-align: center;
+    color: #000;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  .loadingMessage {
+    font-size: 30px;
+    margin-top: 100px;
+    color: #3379a9;
+  }
+
+  .organizationsPreview {
+    .organization {
+      position: relative;
+
+      &.active:before {
+        content: ' ';
+        position: absolute;
+        background: #3b9bb0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 5px;
+      }
+    }
+  }
+
+  .leftColumn {
+    font-size: 17px;
+  }
+
+  @media (min-width: 800px) {
+
+    .leftColumn {
+      .organizationsPreview {
+        padding: 10px;
+
+        .newOrganization {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

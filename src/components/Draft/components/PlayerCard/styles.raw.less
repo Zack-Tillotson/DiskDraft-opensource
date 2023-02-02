@@ -1,0 +1,39 @@
+container {
+  .image {
+    display: inline-block;
+
+    img {
+      height: 100px;
+    }
+  }
+
+  .textAttrs {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5px;
+    max-width: 190px;
+
+    .attrLine > div {
+      display: inline-block;
+    }
+
+    .attrLine {
+      margin-top: 5px;
+
+      &.name {
+        color: #000;
+        font-size: 20px;
+      }
+
+      &.vector {
+        color: #649aa6;
+        font-size: 16px;
+      }
+
+      &.heightWeight, &.genderAge {
+        color: #666;
+        font-size: 14px;
+      }
+    }
+  }
+}

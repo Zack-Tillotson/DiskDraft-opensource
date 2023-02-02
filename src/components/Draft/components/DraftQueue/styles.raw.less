@@ -1,0 +1,43 @@
+container {
+  text-align: left;
+  flex: 0;
+
+  .roundTitle {
+    color: #999;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px 8px;
+  }
+
+  .selectionItem {
+    padding: 3px 8px;
+    border-bottom: solid 1px #ccc;
+    cursor: pointer;
+
+    &.contextTeam {
+      background: #9abed6;
+    }
+
+    &.draftingNow {
+      background: #e58b3b;
+      font-weight: bold;
+    }
+  }
+
+  h3 {
+    text-align: center;
+
+    .timeIcon {
+      color: orange;
+      font-size: 20px;
+    }
+
+    span {
+      vertical-align: text-top;
+    }
+  }
+
+  @media (max-width: 800px) {
+    display: none;
+  }
+}

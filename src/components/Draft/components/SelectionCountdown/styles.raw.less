@@ -1,0 +1,29 @@
+@-webkit-keyframes superImportantAlert {
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: orange;
+  }
+}
+@keyframes superImportantAlert {
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: orange;
+  }
+}
+
+container {
+  font-size: 20px;
+  background: #3379a9;
+  color: white;
+  padding: 15px 5px;
+  margin-bottom: 5px;
+  flex: 0;
+
+  &.yourTurn {
+    animation: superImportantAlert 2s infinite;
+  }
+}

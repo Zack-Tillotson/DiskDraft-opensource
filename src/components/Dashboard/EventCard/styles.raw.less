@@ -1,0 +1,66 @@
+container {
+  margin: 5px;
+  cursor: pointer;
+  display: inline-block;
+  max-width: 450px;
+  width: 95%;
+  height: 123px;
+  background: #f3f3f3;
+  box-shadow: 3px 3px 3px #649aa6;
+
+  &:hover {
+    box-shadow: 3px 3px 15px #649aa6;
+  }
+  
+  .eventImage {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background: #fff center center no-repeat no-repeat;
+    background-size: contain;
+    margin-top: 10px;
+  }
+
+  .eventDetails {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    padding: 15px 10px;
+    width: ~'calc(100% - 30px - 90px)';
+    overflow-x: hidden;
+
+    .eventName {
+      color: #649aa6;
+      font-size: 18px;
+      margin-bottom: 10px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .eventType {
+      color: #888;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    .eventWhen, .regEnds {
+      color: #333;
+      font-size: 13px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+
+  @media (min-width: 800px) {
+
+    .eventImage {
+      width: 120px;
+      height: 120px;
+      margin-top: 0px;
+    }
+
+    .eventDetails {
+      width: ~'calc(100% - 30px - 120px)';
+    }
+  }
+}

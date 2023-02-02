@@ -1,0 +1,66 @@
+@import "../../../Shared/styles/playerNote";
+
+container {
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+
+    thead {
+
+      td {
+        border-bottom: solid 2px #666;
+        cursor: pointer;
+
+        &.baggage {
+          cursor: initial;
+        }
+      }
+
+      .playerTitle {
+        background: none;
+      }
+
+      .baggageTitle {
+        text-align: center;
+      }
+
+    }
+
+    tbody tr:hover td {
+      background: #ddd;
+    }
+
+    tbody tr.active td {
+      background: #ccc;
+    }
+
+    td {
+      padding: 1px 2px;
+      margin: 0;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+
+    .playerImage {
+      height: 20px;
+    }
+
+    .statusImage {
+      height: 20px;
+    }
+
+    .notesActive {
+      
+      .playerNoteColors();
+    }
+  }
+
+  .noPlayersMessage {
+    font-size: 20px;
+    color: #3379a9;
+    text-align: center;
+    margin-top: 15px;
+  }
+}

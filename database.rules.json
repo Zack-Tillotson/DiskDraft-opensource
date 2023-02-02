@@ -1,0 +1,96 @@
+{
+  "rules": {
+    "draftSetup": {
+      "$draftId": {
+        ".read": "root.hasChild('organizations/' + data.child('organizationKey').val() + '/members/' + auth.uid)",
+        ".write": "root.hasChild('organizations/' + newData.child('organizationKey').val() + '/members/' + auth.uid)"
+      }
+    },
+    "drafts": {
+      "$draftId": {
+        ".read": "auth !== null",
+        ".write": "auth !== null",
+        "assignedBaggage": {
+          ".write": "root.hasChild('organizations/' + root.child('drafts/' + $draftId + '/organizationKey').val() + '/members/' + auth.uid)"
+        },
+        "columns": {
+          ".write": "root.hasChild('organizations/' + root.child('drafts/' + $draftId + '/organizationKey').val() + '/members/' + auth.uid)"
+        },
+        "meta": {
+          ".write": "root.hasChild('organizations/' + root.child('drafts/' + $draftId + '/organizationKey').val() + '/members/' + auth.uid)"
+        },
+        "organizationKey": {
+          ".write": "root.hasChild('organizations/' + root.child('drafts/' + $draftId + '/organizationKey').val() + '/members/' + auth.uid)"
+        },
+        "players": {
+          ".write": "root.hasChild('organizations/' + root.child('drafts/' + $draftId + '/organizationKey').val() + '/members/' + auth.uid)"
+        },
+        "settings": {
+          ".write": "root.hasChild('organizations/' + root.child('drafts/' + $draftId + '/organizationKey').val() + '/members/' + auth.uid)"
+        },
+        "teams": {
+          ".write": "root.hasChild('organizations/' + root.child('drafts/' + $draftId + '/organizationKey').val() + '/members/' + auth.uid)"
+        },
+        "joinDraft": {
+          ".write": "root.hasChild('organizations/' + root.child('drafts/' + $draftId + '/organizationKey').val() + '/members/' + auth.uid)"
+        },
+        "sessions": {
+          "$uid": {
+            ".write": "$uid == auth.uid"
+          }
+        },
+        "controls": {
+          ".write": "auth !== null",
+        },
+        "selections": {
+          ".write": "auth !== null",
+        }
+      }
+    },
+    "organizations": {
+      "$orgId": {
+        ".read": "data.hasChild('members/' + auth.uid)",
+
+        "config": {
+          ".write": "data.parent().child('owner').val() === auth.uid"
+        },
+        "draftSetupConfig": {
+          ".write": "data.parent().hasChild('members/' + auth.uid)"
+        },
+        "events": {
+          ".write": "data.parent().hasChild('members/' + auth.uid)"
+        },
+        "members": {
+          ".write": "auth.uid !== null"
+        },
+        "owner": {
+          ".write": "!data.exists() || data.val() === auth.uid"
+        }
+      }
+    },
+    "orgMemberInvites": {
+      "$inviteId": {
+        ".read": "auth !== null",
+        ".write": "!data.exists() || (!data.hasChild('claimedBy') && newData.child('claimedBy').val() === auth.uid)"
+      }
+    },
+    "users": {
+      "$userId": {
+        "public": {
+          ".read":"auth != null",
+          ".write":"auth.uid === $userId"
+        },
+        "private": {
+          ".read": "auth.uid === $userId",
+          ".write":"auth.uid === $userId"
+        }
+      }
+    },
+    "joinDraft": {
+      "$joinToken": {
+        ".read": "auth != null && data.exists()",
+        ".write": "auth != null"
+      }
+    }
+  }
+}

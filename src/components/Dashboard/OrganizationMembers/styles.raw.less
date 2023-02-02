@@ -1,0 +1,85 @@
+container {
+  text-align: left;
+  margin-left: 10px;
+
+  .member {
+    background: #f3f3f3;
+    margin-top: 5px;
+    box-shadow: 3px 3px 8px #ccc;
+    display: inline-block;
+    width: 90%;
+
+    .memberImage {
+      display: inline-block;
+
+      img {
+        height: 50px;
+        width: 50px;
+      }
+    }
+
+    .memberDetail {
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 10px;
+      padding-top: 5px;
+
+      .name {
+        font-size: 20px;
+      }
+
+      .joinDate {
+        color: #666;
+        font-size: 14px;
+        margin-top: 3px;
+      }
+    }
+  }
+
+  .addMember {
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 16px;
+    color: #649aa6;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .addMemberLink {
+    margin-top: 10px;
+    
+    .memberCallToAction {
+      font-size: 16px;
+    }
+
+    input {
+      width: 50%;
+      max-width: ~"calc(90vw - 70px)";
+    }
+
+    .copyLink {
+      background: #3379a9;
+      color: white;
+      cursor: pointer;
+      padding: 1px 10px;
+      font-size: 14px;
+      margin-left: 10px;
+    }
+
+    .explanation {
+      color: #666;
+      font-size: 12px;
+    }
+
+    .removeMemberLink {
+      color: #649aa6;
+      font-size: 12px;
+      cursor: pointer;
+      text-decoration: underline;
+      margin-top: 10px;
+    }
+  }
+}

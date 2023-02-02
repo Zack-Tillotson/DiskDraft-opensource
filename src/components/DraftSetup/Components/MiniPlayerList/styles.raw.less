@@ -1,0 +1,51 @@
+container {
+  border-bottom: solid 1px #ccc;
+  border-top: solid 1px #ccc;
+  margin: 15px 0;
+  padding: 10px 0;
+
+  .playerTable {
+    width: 100%;
+
+    td {
+      padding: 5px 10px;
+    }
+  }
+
+  .player {
+    vertical-align: top;
+    position: relative;
+    width: 100%;
+
+    &:nth-of-type(odd) {
+      background: #dcf2f9;
+    }
+
+    .playerIndex {
+      display: inline-block;
+      color: #666;
+      font-size: 24px;
+      position: relative;
+      top: -11px;
+      padding-left: 5px;
+    }
+
+    .playerSummary {
+      display: inline-block;
+    }
+
+    .addRemoveCtls {
+      vertical-align: top;
+
+      .ctlTitle {
+        font-size: 13px;
+        color: #666;
+        text-align: center;
+      }
+
+      .ctlInput {
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+container {
+  text-align: left;
+  padding: 50px 10px;
+
+  h1 {
+    color: #999;
+    font-size: 30px;
+  }
+
+  .formDesc {
+    font-size: 14px;
+  }
+
+  .draftForm {
+    margin-top: 15px;
+
+    input {
+      font-size: 24px;
+    }
+
+    button {
+      border: none;
+      background: orange;
+      font-size: 24px;
+      margin-left: 10px;
+      padding: 2px 20px;
+
+      @media(max-width: 800px) {
+        margin-top: 5px;
+        margin-left: 0;
+      }
+    }
+  }
+
+  .errorMsg {
+    margin-top: 15px;
+    color: #3379a9;
+  }
+
+  @media(min-width: 800px) {
+    padding-top: 10px;
+    margin-left: 320px;
+  }
+}

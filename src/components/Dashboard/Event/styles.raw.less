@@ -1,0 +1,88 @@
+container {
+  text-align: center;
+
+  .eventInfo {
+    background: #f3f3f3;
+    padding: 15px 10px;
+  }
+
+  .eventImage {
+    display: inline-block;
+  }
+
+  .eventDetails {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 50px;
+    padding-left: 12px;
+    text-align: left;
+
+    h2 {
+      color: #3379a9;
+      font-size: 32px;
+    }
+
+    .eventWhen {
+      margin-top: 20px;
+      color: #666;
+    }
+
+    .regEnds {
+      margin-top: 5px;
+    }
+  }
+
+  .draftStatus {
+    text-align: center;
+    border-top: solid 1px #ccc;
+    padding-top: 15px;
+
+    h2 {
+      font-size: 30px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .status {
+      display: block;
+      vertical-align: top;
+      font-size: 20px;
+      margin: 0 10px;
+
+      &.active {
+        cursor: pointer;
+
+        .statusTitle {
+          border-bottom: solid 5px #649aa6;
+        }
+      }
+
+      &.inactive {
+        color: #ccc;
+      }
+
+      .statusTitle {
+        border-bottom: solid 5px rgba(0,0,0,0);
+        padding-bottom: 5px;
+      }
+
+      .statusIcon {
+        font-size: 38px;
+      }
+
+      .statusCtls {
+        font-size: 14px;
+        color: #649aa6;
+      }
+    }
+
+  }
+
+  @media (min-width: 800px) {
+    .draftStatus {
+      .status {
+        display: inline-block;
+      }
+    }
+  }
+}

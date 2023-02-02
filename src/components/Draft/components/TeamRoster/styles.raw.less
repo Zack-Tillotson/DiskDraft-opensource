@@ -1,0 +1,55 @@
+container {
+  text-align: left;
+  flex: 1;
+  padding: 5px;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar { 
+    display: none; 
+  }
+
+  section {
+    margin-top: 5px;
+
+    &.undrafted {
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      color: #666;
+
+      .statusImage {
+        height: 14px;
+      }
+    }
+  }
+
+  .resetTeamIdLink {
+    float: right;
+    color: #def4fb;
+    font-size: 12px;
+    line-height: 16px;
+    cursor: pointer;
+  }
+
+  .selectableTeam {
+    color: #649aa6;
+    cursor: pointer;
+
+    &:hover {
+      color: #3379a9;
+    }
+  }
+
+  .vectorLimitNote {
+    color: #666;
+    font-size: 12px;
+  }
+
+  .noPlayers {
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+}

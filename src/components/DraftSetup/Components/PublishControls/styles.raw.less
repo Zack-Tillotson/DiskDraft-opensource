@@ -1,0 +1,51 @@
+container {
+  
+  .publishControls {
+    margin: 25px 10px;
+
+    .publishTitle {
+      font-size: 24px;
+      color: #444;
+
+      .publishTitleValue {
+        color: #000;
+      }
+    }
+
+    .statusExplanation {
+      color: #666;
+      font-size: 12px;
+    }
+
+    .publishControl {
+      margin-top: 10px;
+
+      .ctlButton {
+        cursor: pointer;
+        background: #3379a9;
+        color: #fff;
+        display: inline-block;
+        padding: 5px 15px;
+        margin: 5px;
+
+        &.important {
+          color: #000;
+          background: orange;
+        }
+      }
+
+      .lastPublishDate {
+        display: inline-block;
+        color: #888;
+      }
+
+      label {
+        font-size: 14px;
+        color: #333;
+      }
+    }
+  }
+
+  @media (min-width: 800px) {
+  }
+}

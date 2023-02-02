@@ -1,0 +1,52 @@
+container {
+  padding-top: 7px;
+  text-align: left;
+  flex: 1;
+  max-height: 40%;
+  overflow-y: hidden;
+
+  .selectionItem {
+    font-size: 14px;
+    padding: 3px 0;
+    border-bottom: solid 1px #ccc;
+    white-space: nowrap;
+    overflow-x: hidden;
+
+    &.contextTeam {
+      background: #9abed6;
+    }
+
+    .position {
+      color: #666;
+      width: 37px;
+      display: inline-block;
+      text-align: right;
+      margin-right: 5px;
+    }
+
+    .player.skipped {
+      color: #888;
+    }
+
+    .baggagePlayer {
+      color: #777;
+    }
+  }
+
+  h3 {
+    text-align: center;
+
+    .timeIcon {
+      color: orange;
+      font-size: 20px;
+    }
+
+    span {
+      vertical-align: text-top;
+    }
+  }
+
+  @media (max-width: 800px) {
+    display: none;
+  }
+}

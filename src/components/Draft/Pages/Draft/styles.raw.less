@@ -1,0 +1,151 @@
+body::-webkit-scrollbar { 
+  display: none; 
+}
+
+container {
+  min-height: 100vh;
+
+  .requiresLogin {
+    margin-top: 100px;
+
+    h1 {
+      font-size: 26px;
+      padding: 50px 0 25px 0;
+    }
+
+    .loginRequirementExplanation {
+      color: #666;
+    }
+
+    .organizationInfo {
+      margin: 15px 0;
+
+      .orgPrompt {
+        color: #666;
+      }
+    }
+
+    .joinControls {
+      color: #fff;
+      cursor: pointer;
+      background: #3379a9;
+      padding: 3px 15px;
+      display: inline-block;
+      font-size: 14px; 
+    }
+
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  background: #def4fb;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to bottom, #fff 0px, #fff 30px, #def4fb 100px);
+
+  a {
+    text-decoration: none;
+  }
+
+  .leftRail {
+    display: flex;
+    flex-flow: column nowrap;
+    background: #f3f3f3;
+  }
+
+  .rightRail {
+    display: flex;
+    flex-flow: column nowrap;
+    background: #f3f3f3;
+
+    &.expanded .teamRoster {
+      display: none;
+    }
+
+    .railTitle {
+      background: #494949;
+      color: #fff;
+      padding: 5px;
+    }
+  }
+
+  .mainSection {
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar { 
+      display: none; 
+    }
+  }
+
+  @media (min-width: 800px) {
+    margin-top: 0;
+    position: relative;
+    min-height: 100vh;
+    padding-left: 180px;
+    padding-right: 300px;
+
+    .leftRail {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 180px;
+    }
+
+    .rightRail {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 300px;
+    }
+  }
+
+  @media(max-width: 800px) {
+
+    .rightRail {
+
+      &.not-active {
+        display: none;
+      }
+
+      &.active {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+      }
+    }
+  }
+
+  .loader {
+    padding-top: 200px;
+    color: lightblue;
+    font-family: Consolas, Menlo, Monaco, monospace;
+    font-weight: bold;
+    font-size: 10vh;
+    opacity: 0.8;
+    height: calc(100vh - 200px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .loader span {
+    display: inline-block;
+    animation: pulse 0.6s alternate infinite linear;
+  }
+  .loader span:nth-child(odd) {
+    animation-delay: -0.6s;
+  }
+  @keyframes pulse {
+    to {
+      transform: scale(0.8);
+      opacity: 0.5;
+    }
+  }
+}

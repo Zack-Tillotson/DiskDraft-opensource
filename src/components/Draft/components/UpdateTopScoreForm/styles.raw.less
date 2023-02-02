@@ -1,0 +1,88 @@
+container {
+
+  .closeBtn {
+    font-size: 12px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .usageWarning {
+    font-size: 14px;
+    color: #777;
+    margin: 10px;
+
+    .usageWarningTitle {
+      font-weight: bold;
+    }
+  }
+
+  a:link, a:visited {
+    color: #3379a9;
+    text-decoration: none;
+  }
+
+  .form {
+    padding: 0 25px;
+
+    input {
+      width: 100%;
+    }
+  }
+
+  .csrfWarning {
+    font-size: 13px;
+    color: #e58b3b;
+    padding: 5px 50px;
+  }
+
+  .startBtn {
+    margin-top: 15px;
+    font-size: 20px;
+  }
+
+  .results {
+    border-top: solid 1px #999;
+    padding-top: 15px;
+    margin-top: 15px;
+    max-width: 1024px;
+
+    .resultCount {
+      font-size: 14px;
+    }
+
+    .result .success {
+      color: green;
+    }
+
+    .result .fail {
+      color: red;
+    }
+
+    .resultRow {
+      background: #f3f3f3;
+      border: solid 1px #999;
+      padding: 15px;
+      font-size: 24px;
+      display: flex;
+      flex-flow: row nowrap;
+      margin-top: 5px;
+
+      & > * {
+        flex: 1;
+      }
+
+      .num {
+        color: #999;
+        flex: 0;
+      }
+    }
+  }
+  
+}

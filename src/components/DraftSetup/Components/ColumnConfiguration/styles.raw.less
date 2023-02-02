@@ -1,0 +1,84 @@
+container {
+
+  .columnConfiguration {
+    width: 100%;
+
+    .colConfColumn > *, input, select {
+      padding: 2px 5px;
+      font-size: 16px;
+    }
+
+    .rowLabel {
+      font-size: 12px;
+      color: #666;
+    }
+
+    .controlLink {
+      font-size: 12px;
+    }
+
+    .requiredMessage {
+      color: #ccc;
+      font-size: 12px;
+    }
+
+    .colConfColumn {
+      display: flex;
+      flex-flow: row nowrap;
+
+      .sort, .remove, .colType {
+        flex: 0;
+      }
+
+      .colName {
+        flex: 1;
+      }
+
+      .remove {
+        padding-left: 3px;
+      }
+
+      .sort:hover {
+        cursor: pointer;
+      }
+
+      .colType {
+        width: 125px;
+      }
+    }
+
+  }
+
+  .displayInput {
+    width: 90%;
+    margin: 0 5px;
+
+    &:disabled {
+      color: #ddd;
+    }
+  }
+
+  .excludedColumns {
+    margin-top: 15px;
+
+    .exCoTitle {
+      
+    }
+    .excludedColumn {
+      color: #666;
+      display: inline-block;
+      cursor: pointer;
+      margin: 3px 10px;
+      font-size: 12px;
+
+      input {
+        display: none;
+      }
+
+      &:hover {
+        color: #000;
+        text-decoration: underline;
+      }
+    }
+  }
+}

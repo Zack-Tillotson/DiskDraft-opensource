@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "fir-v2",
+    "dev": "fir-v2"
+  }
+}

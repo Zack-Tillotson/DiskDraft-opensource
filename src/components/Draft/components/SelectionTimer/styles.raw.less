@@ -1,0 +1,38 @@
+container {
+  padding: 10px 0;
+  flex: 0;
+
+  .clockContainer {
+    display: flex;
+    flex-flow: row no-wrap;
+    
+    .activeClock {
+      font-size: 30px;
+      display: inline-block;
+      flex: 1;
+    }
+
+    .inactiveClock {
+      font-size: 30px;
+      color: #666;
+      display: inline-block;
+      flex: 1;
+    }
+
+    .selectionStats {
+      font-size: 10px;
+      display: inline-block;
+      min-width: 60px;
+      text-align: left;
+      padding: 3px;
+
+      .round {
+        font-weight: bold;
+      }
+    }
+  }
+
+  @media (max-width: 800px) {
+    display: none;
+  }
+}

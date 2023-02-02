@@ -1,0 +1,181 @@
+[ {
+  "display" : "Id",
+  "id" : "id",
+  "order" : 0,
+  "type" : "TopScore ID",
+  "visible" : false
+}, {
+  "display" : "ID",
+  "id" : "draftId",
+  "order" : 0,
+  "type" : "Number",
+  "visible" : true
+}, {
+  "display" : "Photo",
+  "id" : "image",
+  "order" : 2,
+  "type" : "Image",
+  "visible" : true
+}, {
+  "display" : "First",
+  "id" : "first_name",
+  "order" : 3,
+  "type" : "Text",
+  "visible" : true
+}, {
+  "display" : "Nickname",
+  "id" : "nickname",
+  "order" : 4,
+  "type" : "Nickname",
+  "visible" : true
+}, {
+  "display" : "Last",
+  "id" : "last_name",
+  "order" : 5,
+  "type" : "Text",
+  "visible" : true
+}, {
+  "display" : "Vector",
+  "id" : "vector",
+  "order" : 5.5,
+  "type" : "Number",
+  "visible" : true
+}, {
+  "display" : "Gender",
+  "id" : "gender",
+  "order" : 6,
+  "type" : "Gender",
+  "visible" : true
+}, {
+  "display" : "Height",
+  "id" : "height",
+  "order" : 7,
+  "type" : "Height",
+  "visible" : true
+}, {
+  "display" : "Weight",
+  "id" : "weight",
+  "order" : 8,
+  "type" : "Weight",
+  "visible" : true
+}, {
+  "display" : "Age",
+  "id" : "age",
+  "order" : 8.4,
+  "type" : "Number",
+  "visible" : true
+}, {
+  "display" : "Email",
+  "id" : "email_address",
+  "order" : 9,
+  "type" : "Text",
+  "visible" : true
+}, {
+  "display" : "Baggage Group Id",
+  "id" : "baggage_group_id",
+  "order" : 10,
+  "type" : "Baggage Group ID",
+  "visible" : false
+}, {
+  "display" : "Auth",
+  "id" : "Auth",
+  "order" : 10000,
+  "type" : "Number",
+  "visible" : false
+}, {
+  "display" : "Exp",
+  "id" : "Exp",
+  "order" : 10000,
+  "type" : "Number",
+  "visible" : false
+}, {
+  "display" : "Skill",
+  "id" : "Skill",
+  "order" : 10000,
+  "type" : "Number",
+  "visible" : false
+}, {
+  "display" : "Position",
+  "id" : "Position",
+  "order" : 10000,
+  "type" : "Text",
+  "visible" : false
+}, {
+  "display" : "Dump",
+  "id" : "Dump",
+  "order" : 10000,
+  "type" : "Text",
+  "visible" : false
+}, {
+  "display" : "Back",
+  "id" : "Back",
+  "order" : 10000,
+  "type" : "Text",
+  "visible" : false
+}, {
+  "display" : "Fore",
+  "id" : "Fore",
+  "order" : 10000,
+  "type" : "Text",
+  "visible" : false
+}, {
+  "display" : "Huck Back",
+  "id" : "Huck Back",
+  "order" : 10000,
+  "type" : "Text",
+  "visible" : false
+}, {
+  "display" : "Huck Fore",
+  "id" : "Huck Fore",
+  "order" : 10000,
+  "type" : "Text",
+  "visible" : false
+}, {
+  "display" : "With Mark",
+  "id" : "With Mark",
+  "order" : 10000,
+  "type" : "Text",
+  "visible" : false
+}, {
+  "display" : "Anti Mark",
+  "id" : "Anti Mark",
+  "order" : 10000,
+  "type" : "Text",
+  "visible" : false
+}, {
+  "display" : "Wind",
+  "id" : "Wind",
+  "order" : 10000,
+  "type" : "Text",
+  "visible" : false
+}, {
+  "display" : "Year Started",
+  "id" : "Year Started",
+  "order" : 10000,
+  "type" : "Text",
+  "visible" : false
+}, {
+  "display" : "Weeks Missed",
+  "id" : "Weeks Missed",
+  "order" : 10000,
+  "type" : "Number",
+  "visible" : false
+}, {
+  "display" : "Tourney",
+  "id" : "Tourney",
+  "order" : 10000,
+  "type" : "Text",
+  "visible" : false
+}, {
+  "display" : "Phone",
+  "id" : "Phone",
+  "order" : 10000,
+  "type" : "Text",
+  "visible" : false
+}, {
+  "display" : "Comments",
+  "id" : "Comments",
+  "order" : 10000,
+  "type" : "Text",
+  "visible" : false
+} ]

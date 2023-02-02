@@ -1,0 +1,66 @@
+container {
+  text-align: left;
+  
+  .teamRow {
+    display: flex;
+    flex-flow: row wrap;
+
+    .dragTarget {
+      min-width: 30px;
+      flex: 0;
+      cursor: move;
+      font-size: 22px;
+      color: #3379a9;
+    }
+
+    .draftOrder {
+      flex: 0;
+      min-width: 30px;
+
+      .draftOrderTitle {
+        font-size: 10px;
+        color: #999;
+      }
+
+      .draftOrderValue {
+        font-size: 12px;
+      }
+    }
+
+    .teamName {
+      min-width: 150px;
+      flex: 0;
+      cursor: pointer;
+    }
+
+    .captains {
+      flex: 1;
+    }
+  }
+
+  button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    cursor: pointer;
+    background: orange;
+
+    &:hover {
+      background: #eaa282;
+    }
+  }
+
+  .assigningBaggage {
+    width: 100%;
+  }
+
+  .openAssignForm {
+    color: #3379a9;
+    cursor: pointer;
+    vertical-align: middle;
+
+    &:hover {
+      color: orange;
+    }
+  }
+}

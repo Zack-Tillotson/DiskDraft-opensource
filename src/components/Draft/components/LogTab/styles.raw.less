@@ -1,0 +1,49 @@
+container {
+  text-align: left;
+  font-size: 16px;
+
+  table {
+    width: 100%;
+
+    thead td {
+      border-bottom: solid 2px #666;
+    }
+
+    tbody {
+
+      td {
+        padding: 0 3px;
+      }
+
+      .roundRow td {
+        text-align: center;
+        color: #999;
+        padding: 10px 0;
+        font-size: 12px;
+      }
+
+      .player {
+        cursor: pointer;
+
+        &.skipped {
+          color: #888;
+        }
+
+        &:hover {
+          background: #f3c8a2;
+        }
+      }
+
+      .pickNumber {
+        width: 40px;
+        text-align: right;
+      }
+
+      .timeTaken {
+        text-align: right;
+        width: 75px;
+
+      }
+    }
+  }
+}

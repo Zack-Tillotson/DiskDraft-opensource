@@ -1,0 +1,56 @@
+container {
+  border-top: solid 1px #ccc;
+  padding-top: 15px;
+
+  h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .actionOptions {
+    width: 100%;
+
+    .actionOption {
+      vertical-align: top;
+      font-size: 18px;
+      margin: 0 10px;
+      text-align: left;
+
+      .actionIcon {
+        width: 30px;
+        text-align: center;
+        .statusIcon {
+          font-size: 18px;
+        }
+      }
+
+      .actionTitle {
+        cursor: pointer;
+        color: #649aa6;
+        padding: 10px 25px 0 10px;
+        min-width: 150px;
+      }
+
+      .actionDetail {
+        color: #666;
+        font-size: 15px;
+      }
+
+      &.viewDraft td {
+        margin: 10px 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-top: solid 1px #999;
+        border-bottom: solid 1px #999;
+
+        &.bigLink {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 800px) {
+  }
+}

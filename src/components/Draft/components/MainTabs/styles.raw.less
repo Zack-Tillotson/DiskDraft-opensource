@@ -1,0 +1,37 @@
+container {
+  display: flex;
+  flex-flow: 1 nowrap;
+  border-bottom: solid 1px #ccc;
+  margin-bottom: 8px;
+
+  .main-tab {
+    flex: 1;
+    display: inline-block;
+    border-bottom: solid 3px rgba(0,0,0,0);
+    padding: 5px 0;
+    cursor: pointer;
+
+    &.help {
+      flex: 0;
+      padding-left: 10px;
+      padding-right: 10px;
+      color: #e58b3b;
+    }
+
+    &.active {
+      border-bottom-color: #999;
+      border-left: solid 1px #999;
+      border-rigth: solid 1px #999;
+      background: #3379a9;
+      color: #fff;
+    }
+
+    &:hover {
+      border-bottom-color: #666;
+    }
+  }
+
+  @media (max-width: 800px) {
+    display: none;
+  }
+}

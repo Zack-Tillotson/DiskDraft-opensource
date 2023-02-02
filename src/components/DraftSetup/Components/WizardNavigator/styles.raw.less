@@ -1,0 +1,146 @@
+container {
+
+  .wizardTitle {
+    margin-top: 15px;
+    padding: 5px 0px;
+    font-size: 22px;
+    text-align: center;
+
+    a:link, a:visited {
+      color: #649aa6;
+    }
+  }
+
+  .organizationName {
+    color: #666;
+    padding: 1px 10px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .draftStatus {
+    color: #999;
+    font-size: 12px;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  a.disabled {
+    pointer-events: none;
+    &:link, &:visited {
+      color: #ccc;
+    }
+  }
+
+  .wizardSteps {
+    border-top: solid 1px #ccc;
+    margin-top: 10px;
+    padding: 10px 10px 0 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+
+    .wizardStep {
+      display: inline-block;
+      color: #333;
+      text-align: center;
+      padding-bottom: 2px;
+      border-bottom: solid 2px rgba(0,0,0,0);
+
+      &.active {
+        border-color: #649aa6;
+      }
+
+      i {
+        font-size: 30px;
+        display: block;
+      }
+
+      .stepText {
+        display: none;
+      }
+
+      &.home:before {
+        display: none;
+      }
+    }
+  }
+
+  @media (min-width: 500px) {
+    .wizardSteps {
+      .wizardStep {
+        .stepText {
+          display: block;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 800px) {
+
+    .wizardTitle, .organizationName {
+      text-align: left;
+    }
+
+    .draftStatus {
+      text-align: left;
+    }
+
+    .wizardSteps {
+      display: block;
+
+      .wizardStep {
+        padding: 10px 0 10px 35px;
+        position: relative;
+        font-size: 18px;
+        line-height: 24px;
+        display: block;
+        color: #333;
+        text-align: left;
+
+        &.active {
+          background: #649aa6;
+          color: #f3f3f3;
+        }
+
+        &.inactive:hover {
+          color: black;
+        }
+
+        &.valid:before {
+          background: #a9eaa9;
+        }
+
+        i {
+          font-size: 19px;
+          position: absolute;
+          left: 10px;
+          top: 50%;
+          margin-top: -9px;
+        }
+
+        &.invalid.enabled:before {
+          background: lightblue;
+        }
+
+        &:before {
+          content: ' ';
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          margin-top: -5px;
+          border-radius: 150px;
+          width: 15px;
+          height: 15px;
+          background: #ddd;
+
+        }
+
+        &.home:before {
+          display: none;
+        }
+      }
+    }
+
+  }
+}

@@ -1,0 +1,199 @@
+container {
+
+  label {
+    display: block;
+  }
+
+  .createPromotion {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .promoTitle {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .rightPromo {
+    color: #666;
+    margin-top: 5px;
+    display: none;
+
+    ul {
+      font-size: 14px;
+      margin: 0 auto;
+      text-align: left;
+      max-width: 450px;
+
+      li {
+        list-style: initial;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .orgForm {
+    background: #f3f3f3;
+    margin-top: 15px;
+  }
+
+  .mainFormContent {
+    padding: 10px 25px;
+    text-align: left;
+
+    .createPromotion {
+      text-align: center;
+      line-height: 45px;
+    }
+
+    label {
+      margin: 20px 0 0 0;
+    }
+
+    input {
+      width: 90%;
+      padding: 5px;
+    }
+
+    .inputExplanation {
+      font-size: 12px;
+      color: #666;
+      margin-top: 3px;
+      margin-bottom: 5px;
+    }
+
+    .helpLink {
+      color: #0D3D65;
+      cursor: pointer;
+      text-decoration: underline;
+      margin-left: 3px;
+    }
+
+    .topScoreSection {
+      padding-top: 15px;
+
+      h3 {
+        margin: 10px 0;
+        color: #666;
+      }
+
+      .valiateTopScoreBtn {
+        cursor: pointer;
+        text-decoration: underline;
+        color: darkblue;
+        font-size: 14px;
+        margin-top: 15px;
+      }
+
+      .verifyExplanation {
+        font-size: 12px;
+        color: #666;
+        margin-top: 8px;
+      }
+    }
+
+    .submissionButtons {
+      margin-top: 30px;
+      text-align: left;
+
+      .submitBtn {
+        padding: 5px 10px;
+        background: #365ebf;
+        color: white;
+        cursor: pointer;
+        display: inline-block;
+      }
+    }
+
+    .validation {
+      text-align: center;
+      margin-top: 15px;
+
+      .validationItem {
+        text-align: center;
+        margin: 0 8px;
+        color: #666;
+
+        .validationTitle {
+          display: inline-block;
+        }
+
+        .valid {
+          color: green;
+        }
+
+        .invalid {
+          color: red;
+        }
+      }
+    }
+  }
+
+  .orgForm {
+    position: relative;
+  }
+
+  .sectionBody {
+    padding-left: 15px;
+  }
+
+  .ownerSection {
+    border-bottom: solid 1px #ccc;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+
+  .privateSection {
+
+    h3 {
+      color: #649aa6;
+      font-size: 15px;
+      padding: 10px 0;
+    }
+
+    .sectionDescription {
+      color: #666;
+      font-size: 12px;
+      padding-left: 0;
+    }
+
+    .validationSection {
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+      .valiateTopScoreBtn {
+        padding: 5px 10px;
+        background: #649aa6;
+        color: white;
+        cursor: pointer;
+        display: inline-block;
+      }
+    }
+  }
+
+  @media (min-width: 1300px) {
+    padding: 0 10px;
+    text-align: center;
+    margin: 0 auto;
+
+    .rightPromo {
+      float: right;
+      width: 425px;
+      margin-top: 50px;
+      display: inline-block;
+
+      ul {
+        max-width: 340px;
+      }
+    }
+
+    .mainFormContent {
+      margin-right: 435px;
+      border-right: solid 1px #ccc;
+
+      .validation .validationItem {
+        display: inline-block;
+      }
+    }
+  }
+}
